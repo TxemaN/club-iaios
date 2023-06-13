@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+<section id="iaio">
+<h1>
+    Bienvenido al club de la tercera edad de Antrepenes
+</h1>
+<p>
+    ¿Quieres formar parte del selecto club de los que llegaron a vivir con cierta dignidad? Rellena nuestro formulario.
+</p>
+<div class="datos" tabindex="1">
+
+ 
+<form action="dondesea.php" method="post">
+    <h2>
+        Sólo necesitamos algo de información básica:
+        
+    </h2>
+    <fieldset> <legend>Datos personales básicos</legend>
+    <label for="username">Nombre</label>
+    <input type =  "text" autofocus="autofocus" name="username" id="username" placeholder="Aquí tu nombre">
+    <label for="usersurname">Apellidos</label>
+    <input type = "text" name="usersurname" id="usersurname" placeholder="Aquí tus apellidos">
+    <label for="userage">Edad</label>
+    <input type = "number" name="userage" id="userage" placeholder="Aquí tu edad">
+    <br>
+    <br>
+    <span>Sexo:</span>
+    <label for="usergender">Hombre</label>
+    <input type = "radio" name="usergender" id="usergender" value="Hombre">
+    <label for="usergender">Mujer</label>
+    <input type = "radio" name="usergender" id="usergender" value="Mujer">
+</fieldset>
+</div>
+<br>
+<br>
+<div class="datos" tabindex="2">
+<h2>Háblanos sobre ti, estamos escuchando</h2>
+    <h4> ¿Te sientes viejuno? </h4>
+    <fieldset>
+    <label for="userfeeling">Me siento viejo/a</label>
+    <input type = "checkbox" name="userfeeling" id="userfeeling">
+    <br>
+    <br>
+    <label for="userlife" id="escuchamos">Sigue contándonos tu vida, por favor.</label>
+    <br>
+    <textarea name="userlife" id="userlife" cols="60" rows="10" placeholder="Escribe aquí lo que creas relevante sobre tu experiencia vital"></textarea>
+    </fieldset>
+</div>
+
+<div class="contacto" tabindex="3">
+    <h4> ¿Quieres que contactemos contigo? </h4>
+    <label for="usernumber">Teléfono</label>
+    <input type = "tel" name="usertelnumber" id="usertelnumber" pattern="[0-9]{9}"
+    requiredl placeholder="Aquí tu teléfono">
+    <label for="usermail">Correo electrónico</label>
+    <input type = "email" name="usermail" id="usermail" placeholder="Aquí tu correo electrónico">
+    <br>
+    <input type = "submit" value="Me apunto!!!">
+    <input type = "reset" value="Me he equivocado en una cosa y quiero empezar todo de nuevo">
+</div>
+</form>
+</section>
+<section id="robos">
+
+<h1>¿Te han robado la bici?</h1>
+<p>Por favor, dinos cuándo sucedió</p>
+<div class="datos">
+<form action="datosmaderos.php" method="post">
+
+    <h2>Intenta ser tan preciso como te sea posible</h2>
+    <fieldset> <legend>Fecha y hora</legend>
+        <label for="thiefdate">Día y mes</label>
+        <input type = "date" name="thiefdate" id="thiefdate">
+        <label for="thieftime">Sobre qué hora</label>
+        <input type = "time" name="thieftime" id="thieftime">
+    </fieldset>
+</div>
+
+<br>
+<br>
+
+<div class="datos">
+
+<h2> ¿Podrías describir la bicicleta?</h2>
+<fieldset> <legend>Información vehículo sustraído</legend>
+<label for="colorbici">Color de la bicicleta</label>
+<input type="color" name="colorbici" id="colorbici">
+<br>
+<label for="rangoprecio">Precio de la bicicleta</label>
+<span>0 €</span>
+<input type="range" name="rangoprecio" id="rangoprecio" min="0" max="1000">
+<span>1000 €</span>
+
+<br>
+<label for="biketype">Tipo de bicicleta</label>
+<select name="biketype" id="biketype">
+<option value="paseo_señorial">Paseo - Señorial</option>
+<option value="paseo_anti_plebeyos">Paseo - Anti plebeyos</option>
+<option value="paseo_porEncimaDelHombro">Paseo - Por encima del hombro</option>
+<option value="montaña_gamusinos">Montaña- Gamusinos</option>
+<option value="montaña_HuelefloresPremium">Montaña - Hueleflores premium</option>
+<option value="montaña_fango Lover">Montaña - Fango lover</option>
+<option value="carreras_Metroymedio">Carreras- Metro y medio</option>
+<option value="carreras_fluorescenteEdition">Carreras - 3 de la tarde. Fluorescente edition</option>
+<option value="carreras_Grupitors">Carreras - Grupitors</option>
+</select>
+<br>
+<label for="bikecomponent">Accesorios</label>
+<select name="bikecomponent" id="bikecomponent" multiple>
+<option value="Ruedines">Ruedines</option>
+<option value="Pegatinas">Pegatinas</option>
+<option value="Cestita">Cestita</option>
+<option value="Bomba_de_aire">Bomba de aire</option>
+<option value="Timbre">Timbre</option>
+<option value="Foco">Foco</option>
+
+</select>
+<p id="letrapequeña">Mantenga la tecla ctrl para elegir varios accesorios</p>
+<label for="marca">Marca de la bicicleta</label>
+<input list = "marcas" id="marca" name="marca" placeholder="Aquí la marca">
+<datalist id="marcas">
+<option value="specialized"></option>
+<option value="trek"></option>
+<option value="merida"></option>
+<option value="scott"></option>
+<option value="giant"></option>
+<option value="cube"></option>
+<option value="lapierre"></option>
+<option value="orbea"></option>
+<option value="cannondale"></option>
+<option value="bmc"></option>
+<option value="canyon"></option>
+<option value="look"></option>
+<option value="protek"></option>
+<option value="megamo"></option>
+<option value="pinarello"></option>
+<option value="bianchi"></option>
+<option value="bh"></option>
+<option value="factor"></option>
+<option value="ghost"></option>
+<option value="cervélo"></option>
+<option value="argon"></option>
+
+
+</datalist>
+<br>
+<input type = "submit" value="Denunciar">
+    <input type = "reset" value="Me he equivocado en una cosa y quiero empezar todo de nuevo">
+</fieldset>
+</div>
+</form>
+</section>
+
+</body>
+</html>

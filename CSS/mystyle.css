@@ -1,0 +1,47 @@
+section#iaio {
+    background-color: #003153;
+    font-size: 1em;
+    font-style: bold;
+    background-image: url(https://i.ebayimg.com/images/g/M9AAAOSwkE9i7qFy/s-l500.jpg); background-repeat: no-repeat;
+    background-size: 100%}
+
+section#robos{
+    background-color: #003153;
+    font-size: 1em;
+    font-style: bold;
+    background-image: url(https://pics.knifecenter.com/eyJidWNrZXQiOiAiZmlsZXMua25pZmVjZW50ZXIuY29tIiwia2V5IjogImtuaWZlY2VudGVyL2Rlbml4L2ltYWdlcy9PRDEwMi5qcGciLCJlZGl0cyI6IHsicmVzaXplIjogeyJ3aWR0aCI6IDc2MCwiaGVpZ2h0IjogNDE1LCJmaXQiOiAiY29udGFpbiIsImJhY2tncm91bmQiOiB7InIiOiAyNTUsImciOiAyNTUsImIiOiAyNTUsImFscGhhIjogMX19fX0=); background-repeat: no-repeat;
+    background-size: 100%}
+
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  p {text-align: center;
+    font-size: 2em;}
+    header {
+   background-color: #7FFF00; 
+  }
+  #escuchamos{
+    
+  }
+  .datos, .contacto {
+    font-size: 2em;
+    background-color: whitesmoke;
+    align-content: center; 
+    text-align: center;
+    width:90%;
+    margin:auto;
+    border: solid black;
+    padding-bottom: 5%;
+    
+    position:relative;
+    opacity: 0.75;
+  }
+  nav {
+   background-color: #7FFF00; 
+  }
+  #letrapequeña {
+    font-size: 0.5em;
+  }
+  
